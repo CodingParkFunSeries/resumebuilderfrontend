@@ -3,22 +3,25 @@ import logo from './logo.svg';
 import './App.css';
 
 
+
+
 import ResumeListComponent from './component/ResumeListComponent';
 import ResumeComponent from './component/ResumeComponent';
+import NavigationBar from './component/NavigationBar';
 
+class App extends React.Component {
 
-function App() {
-  return (
-    <div className="App">
-      <h1>Resume</h1>
-      <ResumeListComponent />
+   render() {
+     return (
+        <div>
+          <NavigationBar />
+          <br/>
+          
+          <ResumeListComponent />
+        </div>
+      );
+   }
 
-      <br/>
-      <br/>
-
-      <ResumeComponent />
-    </div>
-  );
 }
 
 export default App;

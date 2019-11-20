@@ -8,7 +8,9 @@ import {
   CardTitle,
   Table,
   Row,
-  Col
+  Col,
+  Button,
+  Input
 } from "reactstrap";
 
 class ResumeListComponent extends React.Component {
@@ -55,8 +57,16 @@ class ResumeListComponent extends React.Component {
     const tableContent =  resumes.map( (item) => {
       return (
         <tr>
+          <td>
+            <div className="marginleft">
+                <Input type="checkbox" />{' '}
+            </div>
+          </td>
           <td>{item.name}</td>
           <td>{item.date}</td>
+          <td>
+             <Button color="success">View</Button>{' '}
+          </td>
         </tr>
        )
     });
@@ -68,17 +78,20 @@ class ResumeListComponent extends React.Component {
             <Col md="12">
               <Card className="card-plain">
                 <CardHeader>
-                  <CardTitle tag="h4">Resumes</CardTitle>
-                  <p className="card-category">
-                    Tracking all of your resumes
+                  <CardTitle tag="h4">Personalized Resumes</CardTitle>
+                  <p className="card-category float-right" >
+                    <Button color="primary">Create</Button>{' '}
+                    <Button color="danger">Delete</Button>{' '}
                   </p>
                 </CardHeader>
                 <CardBody>
                   <Table responsive>
                     <thead className="text-primary">
                       <tr>
+                        <th>Select</th>
                         <th>Name</th>
                         <th>Created On</th>
+                        <th>Action</th>
                       </tr>
                     </thead>
                     <tbody>
