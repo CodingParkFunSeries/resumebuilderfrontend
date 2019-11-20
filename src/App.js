@@ -6,7 +6,7 @@ import './App.css';
 
 
 import ResumeListComponent from './component/ResumeListComponent';
-import ResumeComponent from './component/ResumeComponent';
+import ResumeEditComponent from './component/ResumeEditComponent';
 import NavigationBar from './component/NavigationBar';
 
 class App extends React.Component {
@@ -17,7 +17,7 @@ class App extends React.Component {
           <NavigationBar />
           <br/>
           
-          <ResumeListComponent />
+          <ResumeEditComponent />
         </div>
       );
    }
