@@ -12,7 +12,7 @@ import {
     Input
   } from "reactstrap";
 
-class EducationDetails extends React.Component {
+class ExperienceDetails extends React.Component {
 
     render() {
         return (
@@ -20,20 +20,32 @@ class EducationDetails extends React.Component {
                 <Row>
                     <Col className="pr-1" md="6">
                         <FormGroup>
-                        <label>School Name</label>
+                        <label>Employer</label>
                         <Input
-                            defaultValue="K V Rewari"
-                            placeholder="School Name"
+                            defaultValue="IBM"
+                            placeholder="Company"
                             type="text"
                         />
                         </FormGroup>
                     </Col>
                     <Col className="pl-1" md="6">
                         <FormGroup>
-                        <label>Degree</label>
+                        <label>Job Title</label>
                         <Input
-                            defaultValue="Degree"
-                            placeholder="B.Tech"
+                            defaultValue="Engineer"
+                            placeholder="Job Title"
+                            type="text"
+                        />
+                        </FormGroup>
+                    </Col>
+                </Row>
+                <Row>
+                    <Col md="12">
+                        <FormGroup>
+                        <label>Address</label>
+                        <Input
+                            defaultValue="Hyderabad, India"
+                            placeholder="Home Address"
                             type="text"
                         />
                         </FormGroup>
@@ -74,17 +86,16 @@ class EducationDetails extends React.Component {
                 <Row>
                     <Col className="pr-1" md="6">
                         <FormGroup>
-                            <label>Field of Study</label>
+                            <label>Start Date</label>
                             <Input
-                                defaultValue="Computer Science"
-                                placeholder="Field of study"
-                                type="text"
+                                placeholder="Start Date"
+                                type="date"
                             />
                         </FormGroup>
                     </Col>
                     <Col className="pl-1" md="6">
                         <FormGroup>
-                            <label>Graduation Date</label>
+                            <label>End Date</label>
                             <Input
                                 placeholder="Start Date"
                                 type="date"
@@ -98,4 +109,4 @@ class EducationDetails extends React.Component {
 
 }
 
-export default EducationDetails;
+export default ExperienceDetails;
