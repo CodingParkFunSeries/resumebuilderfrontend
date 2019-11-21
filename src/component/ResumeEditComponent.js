@@ -16,6 +16,8 @@ import {
 import PersonalDetails from './PersonalDetails';
 import EducationDetails from './EducationDetails';
 import ExperienceDetails from './ExperienceDetails';
+import ProjectDetails from './ProjectDetails';
+import SkillDetails from './SkillDetails';
 
 class ResumeEditComponent extends React.Component {
 
@@ -62,12 +64,10 @@ class ResumeEditComponent extends React.Component {
                                     <ExperienceDetails />
                                 </Collapsible>
                                 <Collapsible trigger="Projects" >
-                                    <p>This is the collapsible content. It can be any element or React component you like.</p>
-                                    <p>It can even be another Collapsible component. Check out the next section!</p>
+                                    <ProjectDetails />
                                 </Collapsible>
                                 <Collapsible trigger="Skills" >
-                                    <p>This is the collapsible content. It can be any element or React component you like.</p>
-                                    <p>It can even be another Collapsible component. Check out the next section!</p>
+                                    <SkillDetails />
                                 </Collapsible>
                             </div>
                         </CardBody>
